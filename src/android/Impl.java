@@ -73,22 +73,9 @@ class Impl {
      */
     Intent getDraft (JSONObject params) {
         Intent draft  = getFilledEmailIntent(params);
-        String app    = params.optString("app", MAILTO_SCHEME);
         String header = params.optString("chooserHeader", "Open with");
 
-        if (!app.equals(MAILTO_SCHEME) && isAppInstalled(app)) {
-            return draft.setPackage(app);
-        }
-
-        List<Intent> targets = new ArrayList<>();
-
-        for (String clientId : getEmailClientIds()) {
-            Intent target = (Intent) draft.clone();
-            targets.add(target.setPackage(clientId));
-        }
-
-        return Intent.createChooser(targets.remove(0), header)
-                .putExtra(EXTRA_INITIAL_INTENTS, targets.toArray(new Parcelable[0]));
+        return Intent.createChooser(draft, header);
     }
 
     /**
