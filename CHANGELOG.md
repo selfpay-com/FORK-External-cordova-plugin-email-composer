@@ -1,6 +1,10 @@
 
 ## ChangeLog
 
+### Version 0.10.1 (11.11.2021)
+- [enhancement]: change the logic of function that generate Intent `getDraft`, in order to open email application in Android 11.
+- [enhancement]: adding `emailto` query intent to.
+
 #### Version 0.9.2 (24.01.2019)
 - Fix package android.support.v4.content does not exist
 
