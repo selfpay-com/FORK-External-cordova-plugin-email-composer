@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-email-composer",
-  "version": "0.10.0",
+  "name": "@selfpay/cordova-plugin-email-composer",
+  "version": "0.10.1",
   "description": "Provides access to the standard interface that manages the editing and sending an email message",
   "cordova": {
     "id": "cordova-plugin-email-composer",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katzer/cordova-plugin-email-composer.git"
+    "url": "git+https://github.com/selfpay-ro/cordova-plugin-email-composer.git"
   },
   "keywords": [
     "appplant",
@@ -44,11 +44,11 @@
       "version": ">=4.3.0"
     }
   ],
-  "author": "Sebastián Katzer",
+  "author": "Selfpay",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/katzer/cordova-plugin-email-composer/issues"
+    "url": "https://github.com/selfpay-ro/cordova-plugin-email-composer/issues"
   },
-  "homepage": "https://github.com/katzer/cordova-plugin-email-composer#readme",
+  "homepage": "https://github.com/selfpay-ro/cordova-plugin-email-composer#readme",
   "dependencies": {}
 }
