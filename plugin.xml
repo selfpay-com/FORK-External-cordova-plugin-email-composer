@@ -22,7 +22,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-email-composer"
-        version="0.9.2">
+        version="0.10.2">
 
     <name>EmailComposer</name>
 
@@ -93,7 +93,7 @@
         <preference name="ANDROID_SUPPORT_V4_VERSION" default="28.+"/>
         <framework src="com.android.support:support-v4:$ANDROID_SUPPORT_V4_VERSION"/>
       
-        <config-file target="AndroidManifest.xml" parent="/manifest/queries">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <queries>
                 <intent>
                     <action android:name="android.intent.action.SENDTO" />
