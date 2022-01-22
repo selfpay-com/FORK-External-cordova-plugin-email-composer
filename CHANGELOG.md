@@ -1,6 +1,9 @@
 
 ## ChangeLog
 
+### Version 0.10.2 (22.01.2022)
+- [bugfix:] Fix declaration of queries on AndroidManifest. Fix number version. 
+
 ### Version 0.10.1 (11.11.2021)
 - [enhancement]: change the logic of function that generate Intent `getDraft`, in order to open email application in Android 11.
 - [enhancement]: adding `emailto` query intent to.
